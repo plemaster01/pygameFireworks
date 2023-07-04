@@ -6,7 +6,7 @@ WIDTH = 500
 HEIGHT = 800
 screen = pygame.display.set_mode([WIDTH, HEIGHT])
 surface = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)
-pygame.display.set_caption('Jetpack Joyride Rebuild!')
+pygame.display.set_caption('Fireworks!')
 fps = 60
 timer = pygame.time.Clock()
 fireworks = []
@@ -36,7 +36,7 @@ def draw_fireworks(firework_list, projectile_list):
             remove.append(i)
     remove.sort(reverse=True)
     for r in remove:
-        print(f'fireworks removal: {r}')
+        # print(f'fireworks removal: {r}')
         firework_list.remove(firework_list[r])
 
     remove = []
